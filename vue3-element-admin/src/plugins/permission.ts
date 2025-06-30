@@ -12,7 +12,6 @@ let isGeneratingRoutes = false;
 export async function setupPermission() {
   // 白名单路由
   const whiteList = ["/login"];
-
   // 页面刷新时，初始化菜单和权限
   const userInfoStr = localStorage.getItem("userInfo");
   if (userInfoStr) {
